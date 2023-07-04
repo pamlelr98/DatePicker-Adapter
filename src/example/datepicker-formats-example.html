@@ -1,0 +1,14 @@
+<mat-form-field>
+  <mat-label>Verbose datepicker</mat-label>
+  <input matInput [matDatepicker]="dp" [formControl]="date">
+  <mat-hint>MMMM DD, YYYY</mat-hint>
+  <mat-datepicker-toggle matIconSuffix [for]="dp"></mat-datepicker-toggle>
+  <mat-datepicker #dp></mat-datepicker>
+</mat-form-field>
+
+<pre>{{date.value}}</pre>
+
+
+<!-- Copyright 2023 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at https://angular.io/license -->
